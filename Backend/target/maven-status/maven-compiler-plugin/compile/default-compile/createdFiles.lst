@@ -1,0 +1,10 @@
+com\portfolio\controller\OptimizarController.class
+com\portfolio\model\OptimizarRequest.class
+com\portfolio\PortfolioApplication$1.class
+com\portfolio\PortfolioApplication.class
+com\portfolio\repository\ProyectoRepository.class
+com\portfolio\model\OptimizarResponse.class
+com\portfolio\repository\ResultadosHistoricosRepository.class
+com\portfolio\model\Proyecto.class
+com\portfolio\service\OptimizarService.class
+com\portfolio\model\ResultadosHistoricos.class

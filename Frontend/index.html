@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Optimizador de Portafolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Optimizador de Portafolio</h1>
+        <form id="formulario">
+            <label for="capacidad">Capacidad presupuestaria:</label>
+            <input type="number" id="capacidad" name="capacidad" min="0" required>
+            <h2>Proyectos</h2>
+            <table id="tabla-proyectos">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Peso</th>
+                        <th>Ganancia</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="proyectos-body">
+                </tbody>
+            </table>
+            <button type="button" id="agregar-proyecto">Agregar Proyecto</button>
+            <br><br>
+            <button type="submit">Calcular</button>
+            <button type="button" id="limpiar">Limpiar</button>
+        </form>
+        <div id="resultado" style="display:none;">
+            <h2>Resultado</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Proyecto</th>
+                    </tr>
+                </thead>
+                <tbody id="seleccionados-body"></tbody>
+            </table>
+            <p><strong>Ganancia total:</strong> <span id="ganancia-total"></span></p>
+            <p><strong>Peso total:</strong> <span id="peso-total"></span></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
