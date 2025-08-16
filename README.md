@@ -3,11 +3,12 @@
 ## Instalación
 1. Abrir XAMPP y crea la base de datos `portfolio_db`.
 2. Modifica `application.properties` con tus credenciales.
-3. Ejecutar el proyecto: `mvn spring-boot:run` dentro de la carpeta backend 
+3. Ejecutar el proyecto: `mvn spring-boot:run` dentro de la carpeta backend, esto tambien isntala dependencias y todo 
 5. Accede a Swagger UI en `http://localhost:8080/swagger-ui.html` o a postman con la url `http://localhost:8080/optimizar`
 
 
 ## Endpoint
+  Este endpoint recibe los datos de los proyectos y la capacidad presupuestaria, y retorna la mejor combinación de proyectos optimizada según la ganancia total. Se debe enviar una solicitud POST con el siguiente formato:
 - **POST /optimizar**
 - **Entrada:**
 ```json
